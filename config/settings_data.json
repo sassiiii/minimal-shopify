@@ -123,13 +123,14 @@
           "1488586055382": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/Champ-10k-Gen2_CAT_BelowFold_3_R1_86c4773a-b4bc-4a94-a11c-2966cf432534.webp",
+              "image": "shopify://shop_images/image_3.png",
               "link": "shopify://collections/apres-swim"
             }
           },
           "1488585526849": {
             "type": "image",
             "settings": {
+              "image": "shopify://shop_images/image_1.png",
               "link": "shopify://collections/pestemals"
             }
           }
