@@ -157,7 +157,7 @@
         "type": "featured-collection",
         "settings": {
           "title": "Highlight",
-          "featured_collection": "highlight-collection",
+          "featured_collection": "best",
           "num_per_row": "5",
           "num_rows": "3",
           "vendor_enable": false,
