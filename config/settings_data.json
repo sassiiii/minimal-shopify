@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
     "enable_wide_layout": true,
@@ -63,7 +72,6 @@
       "header": {
         "type": "header",
         "settings": {
-          "logo": "shopify:\/\/shop_images\/logoazul.jpg",
           "logo_max_width": "150",
           "nav_menu": "main-menu",
           "nav_below_logo": false,
@@ -107,22 +115,21 @@
           "1491436931257": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/banner1.jpg",
-              "link": "shopify:\/\/collections\/swim"
+              "image": "shopify://shop_images/Whoosh_-_Holiday_Gift_Guide_Tech_Gadgets_1600x_b04cbdc8-9573-4cce-9cfb-242c9a1a1695.jpg",
+              "link": "shopify://collections/swim"
             }
           },
           "1488586055382": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/banner4.jpg",
-              "link": "shopify:\/\/collections\/apres-swim"
+              "image": "shopify://shop_images/Champ-10k-Gen2_CAT_BelowFold_3_R1_86c4773a-b4bc-4a94-a11c-2966cf432534.webp",
+              "link": "shopify://collections/apres-swim"
             }
           },
           "1488585526849": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/foto_banner3.jpg",
-              "link": "shopify:\/\/collections\/pestemals"
+              "link": "shopify://collections/pestemals"
             }
           }
         },
@@ -149,8 +156,8 @@
         "settings": {
           "title": "Highlight",
           "featured_collection": "highlight-collection",
-          "num_per_row": "3",
-          "num_rows": "2",
+          "num_per_row": "5",
+          "num_rows": "3",
           "vendor_enable": false,
           "show_sale_circle": true,
           "show_sold_out_circle": false,
@@ -328,7 +335,7 @@
               "type": "text",
               "settings": {
                 "title": "Talk about your brand",
-                "home_page_richtext": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+                "home_page_richtext": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
               }
             }
           },
@@ -498,7 +505,7 @@
               "type": "text",
               "settings": {
                 "title": "Talk about your brand",
-                "home_page_richtext": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+                "home_page_richtext": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
               }
             }
           },
@@ -674,7 +681,7 @@
               "type": "text",
               "settings": {
                 "title": "Talk about your brand",
-                "home_page_richtext": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+                "home_page_richtext": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
               }
             }
           },
