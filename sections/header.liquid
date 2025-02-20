@@ -118,7 +118,7 @@
             {% if section.settings.logo != blank %}
               {% capture image_size %}{{ section.settings.logo_max_width }}x{% endcapture %}
               <a href="/" itemprop="url">
-                <img src="{{ section.settings.logo | img_url: image_size }}" 
+                <img src="{{ section.settings.logo | image_url: image_size }}" 
      alt="{{ shop.name }}" 
      itemprop="logo" 
      width="{{ section.settings.logo_max_width }}" 
