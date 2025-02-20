@@ -153,7 +153,11 @@
             <div class="h1 site-header__logo post-large--left" itemscope itemtype="http://schema.org/Organization">
           {% endif %}
               <a href="/" itemprop="url">
-                <img src="{{ section.settings.logo | asset_url }}" alt="{{ shop.name }}" itemprop="logo">
+              <img src="{{ 'image.png' | asset_url }}" 
+                   alt="{{ shop.name }}" 
+                   itemprop="logo" 
+                   width="{{ section.settings.logo_max_width }}" 
+                   height="auto">
               </a>
           {% if template.name == 'index' %}
             </h1>
