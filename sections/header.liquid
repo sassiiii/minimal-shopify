@@ -108,72 +108,72 @@
   <header class="site-header" role="banner">
     <div class="wrapper">
       {% if section.settings.nav_below_logo %}
-      <div class="grid--full">
-        <div class="grid__item">
-          {% if template.name == 'index' %}
-            <h1 class="site-header__logo{% if section.settings.left_aligned_logo %} post-large--left{% endif %}" itemscope itemtype="http://schema.org/Organization">
-          {% else %}
-            <div class="h1 site-header__logo{% if section.settings.left_aligned_logo %} post-large--left{% endif %}" itemscope itemtype="http://schema.org/Organization">
-          {% endif %}
-            {% if section.settings.logo != blank %}
+        <div class="grid--full">
+          <div class="grid__item">
+            {% if template.name == 'index' %}
+              <h1 class="site-header__logo{% if section.settings.left_aligned_logo %} post-large--left{% endif %}" itemscope itemtype="http://schema.org/Organization">
+            {% else %}
+              <div class="h1 site-header__logo{% if section.settings.left_aligned_logo %} post-large--left{% endif %}" itemscope itemtype="http://schema.org/Organization">
+            {% endif %}
+              {% if section.settings.logo %}
+                <a href="/" itemprop="url">
+                  <img src="{{ section.settings.logo | image_url: '150x' }}" 
+                       alt="{{ shop.name }}" 
+                       itemprop="logo" 
+                       width="{{ section.settings.logo_max_width }}" 
+                       height="auto">
+                </a>
+              {% else %}
+                <!-- No logo provided, so no text or placeholder is shown -->
+                <a href="/" itemprop="url"></a>
+              {% endif %}
+            {% if template.name == 'index' %}
+              </h1>
+            {% else %}
+              </div>
+            {% endif %}
+            {% if section.settings.header_text != blank %}
+              <p class="header-message post-large--hide">
+                <small>{{ section.settings.header_text }}</small>
+              </p>
+            {% endif %}
+          </div>
+        </div>
+        <div class="grid--full medium-down--hide">
+          <div class="grid__item">
+            {% include 'site-nav' with linklists[section.settings.nav_menu] %}
+          </div>
+        </div>
+      {% else %}
+        <div class="grid--full post-large--display-table">
+          <div class="grid__item post-large--one-third post-large--display-table-cell">
+            {% if template.name == 'index' %}
+              <h1 class="site-header__logo post-large--left" itemscope itemtype="http://schema.org/Organization">
+            {% else %}
+              <div class="h1 site-header__logo post-large--left" itemscope itemtype="http://schema.org/Organization">
+            {% endif %}
               <a href="/" itemprop="url">
-                <img src="{{ section.settings.logo | image_url: '150x' }}" 
+                <img src="{{ 'image.png' | asset_url }}" 
                      alt="{{ shop.name }}" 
                      itemprop="logo" 
                      width="{{ section.settings.logo_max_width }}" 
                      height="auto">
               </a>
+            {% if template.name == 'index' %}
+              </h1>
             {% else %}
-              <!-- No logo provided, so no text or placeholder is shown -->
-              <a href="/" itemprop="url"></a>
+              </div>
             {% endif %}
-          {% if template.name == 'index' %}
-            </h1>
-          {% else %}
-            </div>
-          {% endif %}
-          {% if section.settings.header_text != blank %}
-            <p class="header-message post-large--hide">
-              <small>{{ section.settings.header_text }}</small>
-            </p>
-          {% endif %}
+            {% if section.settings.header_text != blank %}
+              <p class="header-message post-large--hide">
+                <small>{{ section.settings.header_text }}</small>
+              </p>
+            {% endif %}
+          </div>
+          <div class="grid__item post-large--two-thirds post-large--display-table-cell medium-down--hide">
+            {% include 'site-nav' with linklists[section.settings.nav_menu] %}
+          </div>
         </div>
-      </div>
-      <div class="grid--full medium-down--hide">
-        <div class="grid__item">
-          {% include 'site-nav' with linklists[section.settings.nav_menu] %}
-        </div>
-      </div>
-      {% else %}
-      <div class="grid--full post-large--display-table">
-        <div class="grid__item post-large--one-third post-large--display-table-cell">
-          {% if template.name == 'index' %}
-            <h1 class="site-header__logo post-large--left" itemscope itemtype="http://schema.org/Organization">
-          {% else %}
-            <div class="h1 site-header__logo post-large--left" itemscope itemtype="http://schema.org/Organization">
-          {% endif %}
-              <a href="/" itemprop="url">
-              <img src="{{ 'image.png' | asset_url }}" 
-                   alt="{{ shop.name }}" 
-                   itemprop="logo" 
-                   width="{{ section.settings.logo_max_width }}" 
-                   height="auto">
-              </a>
-          {% if template.name == 'index' %}
-            </h1>
-          {% else %}
-            </div>
-          {% endif %}
-          {% if section.settings.header_text != blank %}
-            <p class="header-message post-large--hide">
-              <small>{{ section.settings.header_text }}</small>
-            </p>
-          {% endif %}
-        </div>
-        <div class="grid__item post-large--two-thirds post-large--display-table-cell medium-down--hide">
-          {% include 'site-nav' with linklists[section.settings.nav_menu] %}
-        </div>
-      </div>
       {% endif %}
     </div>
   </header>
