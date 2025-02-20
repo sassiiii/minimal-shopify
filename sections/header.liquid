@@ -116,9 +116,8 @@
             <div class="h1 site-header__logo{% if section.settings.left_aligned_logo %} post-large--left{% endif %}" itemscope itemtype="http://schema.org/Organization">
           {% endif %}
             {% if section.settings.logo != blank %}
-              {% capture image_size %}{{ section.settings.logo_max_width }}x{% endcapture %}
               <a href="/" itemprop="url">
-                <img src="{{ section.settings.logo }}" 
+                <img src="{{ section.settings.logo | image_url: '300x' }}" 
                      alt="{{ shop.name }}" 
                      itemprop="logo" 
                      width="{{ section.settings.logo_max_width }}" 
