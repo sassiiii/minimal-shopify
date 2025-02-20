@@ -11,7 +11,7 @@
   "current": {
     "enable_wide_layout": true,
     "logo": "shopify://shop_images/image_14b22934-1deb-4875-8242-731bc6753afc.png",
-    "logo_max_width": "100000",
+    "logo_max_width": "150",
     "theme_bg_image": false,
     "bg_custom": "",
     "bg_image_display": "tile",
