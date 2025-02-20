@@ -1164,7 +1164,7 @@ theme.equalHeights = function ($selector) {
 $(theme.init);
 /* This will make sure the parent container allows the logo to scale correctly */
 .site-header__logo img {
-  width: 50%;
-  height: auto;
-  max-width: 10px !important; /* Force this size */
+    width: 100%; /* Let it fill its container */
+    max-width: 150px; /* Limit its max width */
+    height: auto; /* Maintain aspect ratio */
 }
