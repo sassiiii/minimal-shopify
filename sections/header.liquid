@@ -117,12 +117,12 @@
           {% endif %}
             {% if section.settings.logo != blank %}
               {% capture image_size %}{{ section.settings.logo_max_width }}x{% endcapture %}
-              <img src="{{ section.settings.logo | image_url: image_size }}" 
-                   alt="{{ shop.name }}" 
-                   itemprop="logo" 
-                   width="{{ section.settings.logo_max_width }}" 
-                   height="auto">
-
+              <a href="/" itemprop="url">
+                <img src="{{ section.settings.logo | image_url: image_size }}" 
+                     alt="{{ shop.name }}" 
+                     itemprop="logo" 
+                     width="{{ section.settings.logo_max_width }}" 
+                     height="auto">
               </a>
             {% else %}
               <!-- No logo provided, so no text or placeholder is shown -->
