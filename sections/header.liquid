@@ -22,7 +22,6 @@
     }
   {% endunless %}
 
-
   {% unless section.settings.nav_below_logo %}
     @media screen and (min-width: 769px) {
       .site-nav {
@@ -36,20 +35,8 @@
   <div class="header-bar">
     <div class="wrapper medium-down--hide">
       <div class="post-large--display-table">
-
         {% if section.settings.header_text != blank or section.settings.header_search_enable %}
           <div class="header-bar__left post-large--display-table-cell">
-
-            {% comment %}
-              Add social links to header
-            {% endcomment %}
-
-            {% comment %}
-            <div class="header-bar__module header-bar__module--list">
-              {% include 'social-links' %}
-            </div>
-            {% endcomment %}
-
             {% if section.settings.header_text != blank %}
               <div class="header-bar__module header-bar__message">
                 {{ section.settings.header_text }}
@@ -59,12 +46,9 @@
                 {% include 'search-bar' with 'header' %}
               </div>
             {% endif %}
-
           </div>
         {% endif %}
-
         <div class="header-bar__right post-large--display-table-cell">
-
           {% if shop.customer_accounts_enabled %}
             <ul class="header-bar__module header-bar__module--list">
               {% if customer %}
@@ -85,21 +69,18 @@
               {% endif %}
             </ul>
           {% endif %}
-
           <div class="header-bar__module">
             <span class="header-bar__sep" aria-hidden="true"></span>
             <a href="/cart" class="cart-page-link">
               <span class="icon icon-cart header-bar__cart-icon" aria-hidden="true"></span>
             </a>
           </div>
-
           <div class="header-bar__module mine-cart-counter">
             <a href="/cart" class="cart-page-link">
               {% unless cart.item_count == 0 %}{% endunless %}
               <span class="cart-count header-bar__cart-count{% if cart.item_count == 0 %} hidden-count{% endif %}">{{ cart.item_count }}</span>
             </a>
           </div>
-
           {% if section.settings.header_search_enable %}
             {% unless section.settings.header_text == blank %}
               <div class="header-bar__module header-bar__search">
@@ -107,7 +88,6 @@
               </div>
             {% endunless %}
           {% endif %}
-
         </div>
       </div>
     </div>
@@ -115,9 +95,6 @@
       {% unless section.settings.nav_menu == blank and section.settings.header_search_enable == false and shop.customer_accounts_enabled == false %}
         <button type="button" class="mobile-nav-trigger" id="MobileNavTrigger" data-menu-state="close">
           <span class="icon icon-hamburger" aria-hidden="true"></span>
-          {%comment%}
-            {{ 'layout.navigation.menu' | t }}
-          {%endcomment%}
         </button>
       {% endunless %}
       <a href="/cart" class="cart-page-link mobile-cart-page-link">
@@ -130,9 +107,7 @@
 
   <header class="site-header" role="banner">
     <div class="wrapper">
-
       {% if section.settings.nav_below_logo %}
-
       <div class="grid--full">
         <div class="grid__item">
           {% if template.name == 'index' %}
@@ -143,14 +118,10 @@
             {% if section.settings.logo != blank %}
               {% capture image_size %}{{ section.settings.logo_max_width }}x{% endcapture %}
               <a href="/" itemprop="url">
-                {% if section.settings.logo != blank %}
-                  <img src="{{ section.settings.logo | img_url: image_size }}" alt="{{ shop.name }}" itemprop="logo">
-                {% else %}
-                  <!-- Optionally, you can leave this blank or show nothing in case there is no logo -->
-                  <span class="shop-name"></span>
-                {% endif %}
+                <img src="{{ section.settings.logo | img_url: image_size }}" alt="{{ shop.name }}" itemprop="logo">
               </a>
             {% else %}
+              <!-- No logo provided, so no text or placeholder is shown -->
               <a href="/" itemprop="url"></a>
             {% endif %}
           {% if template.name == 'index' %}
@@ -170,9 +141,7 @@
           {% include 'site-nav' with linklists[section.settings.nav_menu] %}
         </div>
       </div>
-
       {% else %}
-
       <div class="grid--full post-large--display-table">
         <div class="grid__item post-large--one-third post-large--display-table-cell">
           {% if template.name == 'index' %}
@@ -181,7 +150,7 @@
             <div class="h1 site-header__logo post-large--left" itemscope itemtype="http://schema.org/Organization">
           {% endif %}
               <a href="/" itemprop="url">
-                  <img src="{{ 'mine-logo.svg' | asset_url }}" alt="{{ shop.name }}" itemprop="logo">
+                <img src="{{ section.settings.logo | asset_url }}" alt="{{ shop.name }}" itemprop="logo">
               </a>
           {% if template.name == 'index' %}
             </h1>
@@ -198,9 +167,7 @@
           {% include 'site-nav' with linklists[section.settings.nav_menu] %}
         </div>
       </div>
-
       {% endif %}
-
     </div>
   </header>
 </div>
