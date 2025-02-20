@@ -17,6 +17,24 @@
       }
     ]
   },
+{
+  "name": "Logo",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo Image",
+      "info": "Upload your logo here"
+    },
+    {
+      "type": "text",
+      "id": "logo_max_width",
+      "label": "Logo Max Width",
+      "default": "450",
+      "info": "Set the max width of the logo in pixels."
+    }
+  ]
+},
   {
     "name": "Colors",
     "settings": [
@@ -137,24 +155,6 @@
       }
     ]
   },
-{
-  "name": "Logo",
-  "settings": [
-    {
-      "type": "image_picker",
-      "id": "logo",
-      "label": "Logo Image",
-      "info": "Upload your logo here"
-    },
-    {
-      "type": "text",
-      "id": "logo_max_width",
-      "label": "Logo Max Width",
-      "default": "450",
-      "info": "Set the max width of the logo in pixels."
-    }
-  ]
-},
   {
     "name": "Typography",
     "settings": [
