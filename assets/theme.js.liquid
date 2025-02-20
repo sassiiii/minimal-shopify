@@ -1163,15 +1163,8 @@ theme.equalHeights = function ($selector) {
 // Initialize theme's JS on docready
 $(theme.init);
 /* This will make sure the parent container allows the logo to scale correctly */
-.site-header__logo {
-  width: 100%; /* Ensure it takes up the full available space */
-  max-width: 150px; /* Constrain the width */
-  margin: 0 auto; /* Center it horizontally */
-}
-
-/* Logo image size */
 .site-header__logo img {
-  width: 100%; /* Make it fill the container */
+  width: 50%;
   height: auto;
-  max-width: 150px; /* Set the max width you want */
+  max-width: 150px !important; /* Force this size */
 }
