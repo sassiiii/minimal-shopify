@@ -73,8 +73,7 @@
       "header": {
         "type": "header",
         "settings": {
-          "logo": "shopify://shop_images/image_14b22934-1deb-4875-8242-731bc6753afc.png",
-          "logo_max_width": "300",
+          "logo_max_width": "",
           "nav_menu": "main-menu",
           "nav_below_logo": false,
           "left_aligned_logo": false,
