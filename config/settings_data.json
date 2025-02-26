@@ -142,7 +142,7 @@
         ],
         "settings": {
           "slider_home_auto": true,
-          "slider_home_show_dots": false,
+          "slider_home_show_dots": true,
           "slider_home_rate": "3000",
           "slider_home_transition": "slide"
         }
