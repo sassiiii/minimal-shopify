@@ -113,13 +113,6 @@
       "slider": {
         "type": "slider",
         "blocks": {
-          "1491436931257": {
-            "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/Whoosh_-_Holiday_Gift_Guide_Tech_Gadgets_1600x_b04cbdc8-9573-4cce-9cfb-242c9a1a1695.jpg",
-              "link": "shopify://collections/swim"
-            }
-          },
           "1488586055382": {
             "type": "image",
             "settings": {
@@ -136,7 +129,6 @@
           }
         },
         "block_order": [
-          "1491436931257",
           "1488586055382",
           "1488585526849"
         ],
