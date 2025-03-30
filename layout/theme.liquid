@@ -6,9 +6,11 @@
 <!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
 
+
 <!-- BEAE-GLOBAL-FONT --> 
 {% capture the_snippet_global_font %}{% include 'beae-global-font' %}{% endcapture %} {% unless the_snippet_global_font contains 'Liquid error' %} {{ the_snippet_global_font }} {% endunless %} 
  <!-- END BEAE-GLOBAL-FONT -->
+
 
 <!-- BEAE-HEADER --> 
 {%- render 'beae_header' -%}
@@ -114,10 +116,10 @@
 {{ 'theme.js' | asset_url | script_tag }}
 
 
+
 <!-- BEAE-FOOTER --> 
 {%- render 'beae_footer' -%}
 <!-- END BEAE-FOOTER -->
-<!-- BEAE-AB-SNIPPET --> 
 
 <!-- BEAE-AB-SNIPPET --> 
 {%- render 'beae_ab_snippet' -%}
